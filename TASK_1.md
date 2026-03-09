@@ -10,6 +10,14 @@
 
 ❌ **You are not allowed to ask others (e.g. classmates) for help**
 
+
+❗ **Start the screen recording now**
+
+❗ **Work on this task until you succesfully implemented it (but no longer than 1.5h).**
+
+❗ **As a final step, fill out the survey which asks you to submit your code changes + screen recording.**
+
+
 ## Setting
 You are a Junior Developer in the web development startup ACME. One of your most popular products is an e-commerce application that you customize for online shops or retailers selling exclusive items such as rare collectables, designer fashion, art, and NFTs.
 
