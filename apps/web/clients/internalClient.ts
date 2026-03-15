@@ -4,8 +4,17 @@ import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 
 const registerUser = async (input: PlatformUserCreateInput): Promise<Pick<PlatformUser, "id"> | undefined | null> => {
-  // ToDo: Implement the registerUser function
-  return null
+  try {
+    // Explicitly use 127.0.0.1 to avoid Node.js IPv6 localhost resolution failures
+    const { data } = await axios.post('http://127.0.0.1:3001/register', {
+      email: input.email,
+      password: input.password,
+    });
+    return data.user;
+  } catch (error: any) {
+    console.error('Registration failed via internalClient:', error?.response?.data || error.message);
+    return null;
+  }
 };
 
 const loginUser = async (input: PlatformUserCreateInput) => {
